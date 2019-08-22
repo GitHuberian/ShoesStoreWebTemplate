@@ -1,0 +1,479 @@
+/**
+ * 1. Set default font family to monospace.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+
+html {
+  font-family: "Roboto", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+/**
+     * Remove default margin and padding.
+     */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+#striped-background {
+  height: 80vh;
+  width: 80%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.stripe-1 {
+  -moz-transform: skew(35deg, 0deg);
+  -webkit-transform: skew(35deg, 0deg);
+  -o-transform: skew(35deg, 0deg);
+  -ms-transform: skew(35deg, 0deg);
+  transform: skew(35deg, 0deg);
+
+  width: 75px;
+  height: 40%;
+  align-self: flex-end;
+}
+
+.stripe-2 {
+  -moz-transform: skew(35deg, 0deg);
+  -webkit-transform: skew(35deg, 0deg);
+  -o-transform: skew(35deg, 0deg);
+  -ms-transform: skew(35deg, 0deg);
+  transform: skew(35deg, 0deg);
+
+  width: 75px;
+  height: 40%;
+  align-self: flex-end;
+  margin-left: 5rem;
+}
+
+.stripe-3 {
+  -moz-transform: skew(35deg, 0deg);
+  -webkit-transform: skew(35deg, 0deg);
+  -o-transform: skew(35deg, 0deg);
+  -ms-transform: skew(35deg, 0deg);
+  transform: skew(35deg, 0deg);
+
+  width: 25%;
+  height: 100%;
+  margin-left: -5rem;
+}
+
+.stripe-4 {
+  -moz-transform: skew(35deg, 0deg);
+  -webkit-transform: skew(35deg, 0deg);
+  -o-transform: skew(35deg, 0deg);
+  -ms-transform: skew(35deg, 0deg);
+  transform: skew(35deg, 0deg);
+
+  width: 75px;
+  height: 40%;
+  margin-left: -5rem;
+}
+
+.gradient-red {
+  background: rgb(2, 0, 36);
+  background: -moz-linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(149, 11, 45, 1) 35%,
+    rgba(252, 52, 78, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(149, 11, 45, 1) 35%,
+    rgba(252, 52, 78, 1) 100%
+  );
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(149, 11, 45, 1) 35%,
+    rgba(252, 52, 78, 1) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#fc344e",GradientType=1);
+}
+
+.header-content {
+  position: absolute;
+  top: 0;
+  width: 80%;
+  padding: 0 10%;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+  grid-template-rows: 100px 100px 35vh 35vh;
+}
+
+header {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+  display: flex;
+  justify-content: space-between;
+  align-self: center;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+header nav {
+  padding-right: 30px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+header nav ul li {
+  padding: 0 20px;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+.description {
+  grid-column: 1 / span 2;
+  grid-row: 3;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+.description h1 {
+  font-size: 4em;
+}
+
+.description p {
+  font-weight: 300;
+  line-height: 2em;
+}
+
+.shoe {
+  grid-column: 3 / span 2;
+  grid-row: 3;
+}
+
+.shoe img {
+  height: 23rem;
+}
+
+header .logo {
+  padding: 10px 40px;
+}
+
+header .logo img {
+  width: 50px;
+}
+
+section {
+  width: 80%;
+  padding: 4rem 10%;
+  display: flex;
+}
+
+.features {
+  background: #fff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  width: 100%;
+}
+
+.features ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.features ul li {
+  text-align: center;
+}
+
+.features ul li:nth-child(1) {
+  border-right: 1px solid #eeeeee;
+  padding-right: 5rem;
+}
+
+.features ul li:nth-child(2) {
+  border-right: 1px solid #eeeeee;
+  padding-right: 5rem;
+}
+
+.features ul li:nth-child(3) {
+  border-right: 1px solid #eeeeee;
+  padding-right: 5rem;
+}
+
+.features ul li p {
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.features ul li h3 {
+  margin: 0;
+}
+
+.icon-f-1 {
+  display: block;
+  background-image: url("../img/delivery-truck.svg");
+  width: 2em;
+  height: 2em;
+  background-position: center;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.icon-f-2 {
+  display: block;
+  background-image: url("../img/box.svg");
+  width: 2em;
+  height: 2em;
+  background-position: center;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.icon-f-3 {
+  display: block;
+  background-image: url("../img/headset.svg");
+  width: 2em;
+  height: 2em;
+  background-position: center;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.icon-f-4 {
+  display: block;
+  background-image: url("../img/credit-card.svg");
+  width: 2em;
+  height: 2em;
+  background-position: center;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.specials-item-container {
+  overflow: hidden;
+  position: relative;
+}
+
+.specials-item-container .img-filter img {
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  margin-bottom: -0.3rem;
+}
+
+.front-specials {
+  display: grid;
+  grid-template-columns: 20% 20% 20% 40%;
+  grid-template-rows: 300px 100px 300px 100px;
+  grid-gap: 20px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.s1 {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.s2 {
+  grid-column: 2 / span 2;
+}
+
+.s3 {
+  grid-column: 2 / span 2;
+  grid-row: 2 / span 2;
+}
+
+.s4 {
+  grid-column: 4;
+  grid-row: 1 / span 3;
+}
+
+.cover-filter {
+  width: 100%;
+  height: 100%;
+}
+
+.specials-item-container .img-filter {
+  background-color: #950b2d;
+}
+
+.specials-item-container .img-filter img {
+  opacity: 0.8;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.specials-item-container:hover > p {
+  opacity: 0;
+}
+
+.specials-item-container:hover img {
+  opacity: 1;
+}
+
+.specials-item-container p {
+  position: absolute;
+  top: 0rem;
+  padding: 2rem;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.18rem;
+  font-size: 1.2em;
+  opacity: 1;
+  -webkit-transition: opacity 0.2s ease-out;
+  -moz-transition: opacity 0.2s ease-out;
+  -o-transition: opacity 0.2s ease-out;
+  transition: opacity 0.2s ease-out;
+}
+
+.full-width-section {
+  background-color: #e2e2e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  font-weight: 300;
+}
+
+form input {
+  padding: 10px;
+}
+
+form button {
+  padding: 10px 60px;
+  margin: 10px auto;
+  background-color: black;
+  color: white;
+  border: transparent;
+  font-size: 1em;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  font-family: "Montserrat", sans-serif;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+form button:hover {
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: black;
+  color: white;
+  padding: 5% 10%;
+}
+
+footer .company-info {
+  flex: 1 1 0;
+  padding-top: 1em;
+}
+
+footer .company-info .logo img {
+  width: 5rem;
+}
+
+footer .company-info p {
+  color: white;
+  font-weight: 300;
+  line-height: 2em;
+}
+
+footer .site-map {
+  color: white;
+  flex: 1 1 0;
+}
+
+footer .site-map h3 {
+  padding-inline-start: 40px;
+}
+
+footer .site-map nav ul {
+  padding: 0px;
+}
+
+footer .contact-info {
+  flex: 1 1 0;
+}
+
+footer .contact-info h3 {
+  padding-inline-start: 40px;
+}
+
+footer .contact-info ul {
+  list-style: none;
+}
+
+footer .site-map nav ul li {
+  display: block;
+  padding: 2% 40px;
+  font-size: 0.9em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+}
+
+footer .contact-info ul li {
+  padding: 2% 0;
+}
+
+.social .twitter span {
+  background-image: url("../img/twitter.svg");
+  display: block;
+  width: 1.7em;
+  height: 1.7em;
+  background-repeat: no-repeat;
+}
+
+.social .facebook span {
+  background-image: url("../img/facebook.svg");
+  display: block;
+  width: 1.7em;
+  height: 1.7em;
+  background-repeat: no-repeat;
+}
+
+.social .instagram span {
+  background-image: url("../img/instagram.svg");
+  display: block;
+  width: 1.7em;
+  height: 1.7em;
+  background-repeat: no-repeat;
+}
